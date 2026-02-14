@@ -38,7 +38,7 @@ I optimized this specific implementation for **NVIDIA Ampere (A100)** or newer G
 
 ## 1. Executive Summary
 
-I have successfully reproduced the results of the **Decision Transformer** (Chen et al., 2021) using a high-performance, single-notebook architecture. By leveraging the massive VRAM and compute of an A100 GPU, I moved beyond standard implementations to achieve expert-level "stitching" in under 3 minutes of training. My study concludes with an ablation analysis that validates the model's sensitivity to return-conditioning and temporal context.
+I have successfully reproduced the results of the **Decision Transformer** (Chen et al., 2021) using a high-performance, single-notebook architecture. By leveraging the massive VRAM and compute of an A100 GPU, I moved beyond standard implementations to achieve expert-level "stitching" in under 10 minutes of training. My study concludes with an ablation analysis that validates the model's sensitivity to return-conditioning and temporal context.
 
 ---
 
@@ -50,7 +50,7 @@ I trained the model on the `hopper-medium-v2` dataset (repaired from the `v0` HD
 | --- | --- | --- |
 | **Mean Normalized Score** | 67.6 ± 1.0 | **80.63 ± 25.94** |
 | **Max Score Reached** | ~75 | **96.08** |
-| **Training Wall-Clock** | ~30 Minutes | **~2.5 Minutes** |
+| **Training Wall-Clock** | ~30 Minutes | **~10 Minutes** |
 
 ### 🔍 Performance Interpretation
 
